@@ -1,0 +1,31 @@
+
+/* Make reservation */
+
+.tm-res{
+    /* background: #cc4151; */
+    background: rgb(165, 100, 100);
+    padding: 2%;
+}
+
+
+.tm-resbutton p{
+    display: table;
+    max-width: 30%;
+    margin: 0 auto;
+    font-size: 2.5vw;
+     padding: 2%;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #fff;
+   
+}
+.tm-resbutton a{
+     text-decoration: none;
+}
+
+.tm-resbutton p:hover{
+    color: #ec3c6a;
+    background: #fff;
+}
+
+/*make reservation end*/

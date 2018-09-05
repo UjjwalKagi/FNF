@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Futsal Nepal Registration</title>
+<!-- Custom Theme files -->
+<link href="../assets/login/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+
+<link href="../assets/login/css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!--Google Fonts-->
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<script src="../assets/login/js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+	<app-header></app-header>
+	<div class="wthree-dot">
+		<h1>Sign In</h1>
+			<div class="profile">
+				<div class="wrap">
+					<div class="w3layouts-top-grids">
+						<ul class="rslides callbacks callbacks1" id="slider4">
+							
+							<li>
+								<div class="w3ls-subscribe">
+									<div class="agileits-border">
+										<h4>Have An Account?</h4><br><br>
+										
+										<form ngNativeValidate [formGroup]="customersigninForms" (submit)="customersigninForm()">
+											
+											<input type="email" name="Email" placeholder="Email" required=""  minlength="5"  oninvalid="this.setCustomValidity('Please Enter valid email')"
+											oninput="setCustomValidity('')" formControlName="Email"><br>
+											<input type="password" name="password" placeholder="Password" required="" minlength="3" oninvalid="this.setCustomValidity('Please Enter password')"
+											oninput="setCustomValidity('')"  formControlName="Password" ><br><br>
+											<input type="submit" value="Sign In">
+										</form>
+
+										<div class="agileinfo-follow">
+											<h4><a routerLink="/forgotpassword">Forgot Password</a></h4>
+										</div>
+										<br>
+										<br>
+										<div class="agile-signin">
+											<h4>Don't You have an account <a routerLink="/signup">Sign Up</a></h4>
+										</div>
+
+									</div>
+								</div>
+							</li>
+						</ul>
+					
+<!-- 		
+					<div class="wthree_footer_copy">
+						<p>© 2018 Futsal Nepal</p>
+				</div> -->
+			</div>
+			</div>
+			</div>
+		</div>
+		
+	</body>
+	<app-footer></app-footer>
+</html>

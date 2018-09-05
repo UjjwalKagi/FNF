@@ -1,0 +1,14 @@
+body{
+    background: url("/../assets/images/bg/3.jpg");
+    align-self: auto;
+}
+
+.container{
+    background: url("/../assets/images/bg/3.jpg");
+}
+
+/* .thumbnail 
+{
+    height : 250px;
+    width : 250px;
+} */

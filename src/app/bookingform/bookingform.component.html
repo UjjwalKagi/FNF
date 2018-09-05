@@ -1,0 +1,67 @@
+<html> 
+    <head> 
+        <title>Futsal Nepal Booking Form</title>          
+        <link rel="stylesheet" href="../assets/bookingform/css/jquery-ui.css" /> 
+        <link rel="stylesheet" href="../assets/bookingform/css/style.css" type="text/css" /> 
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">        
+    </head>     
+    <body>
+        <app-header></app-header> 
+        <!--background-->         
+        <h1>Booking Form</h1> 
+        <div class="main-w3layouts-content"> 
+            <div class="top-section"> 
+                <h2 class="sub-hdng-agileits-w3layouts" data-pgc-edit class="text-center text-primary">Futsal Booking</h2> 
+                <p>Please fill the form below&nbsp;</p>
+            </div>             
+            <div class="w3-agile-login-form"> 
+                <form class="" ngNativeValidate [formGroup]="bookingcreationForms" (submit)="bookingcreationForm()"> 
+                    <div class="top-fields-wthree"></div>                     
+                    <!-- <h3 class="inner-hdng-agileinfo">Fill up all fields</h3>  -->
+                    <div class="mid-fields-agileits-w3layouts"> 
+                        <div class="input-fields-w3ls2"> 
+                            <select id="country" formControlName="Court" onchange="change_country(this.value)" class="frm-field required" required="">
+                                <option value="">Court List</option>                                 
+                                <option value="">Bouddha Futsal</option>                                 
+                                <option value="">Baneshwor Futsal</option>                                 
+                                <option value="">Pulchowk Futsal</option>
+                                <option value="">Kalanki Futsal</option>                                 
+                                <option value="">Newroad Futsal</option>
+                                <option value="">Lainchaur Futsal</option>
+                            </select>                             
+                        </div>
+                        <br>
+                    </div>
+                    <div class="mid-fields-agileits-w3layouts"> 
+                        <div class="input-fields-w3ls2"> 
+                                <!-- <input id="datepicker" name="Text" type="date" placeholder="Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="" /> -->
+                            <input id="datepicker" formControlName="Date"  name="Text" type="date" placeholder="Date" required=""/>
+                        </div>
+                    </div>
+                    <div class="mid-fields-agileits-w3layouts"> 
+                        <div class="input-fields-w3ls2"> 
+                            <select id="country" formControlName="Timeandprice" onchange="change_country(this.value)" class="frm-field required" required=""> 
+                                <option value="">Time & Price</option>                                 
+                                <option value="">10:00 - 11:00 (Rs 500)</option>                                 
+                                <option value="">11:00 - 12:00 (Rs 400)</option>                                 
+                                <option value="">12:00 - 13:00 (Rs 450)</option>
+                                <option value="">14:00 - 15:00 (Rs 500)</option>                                 
+                                <option value="">15:00 - 16:00 (Rs 400)</option>                                 
+                                <option value="">16:00 - 17:00 (Rs 450)</option>                                  
+                            </select>                             
+                        </div>
+                    </div>
+                    <div class="mid-fields-agileits-w3layouts">                      
+                    <input type="submit" value="Book Now"> </div>
+                </form>                 
+            </div>             
+        </div>         
+        <div class="clear"></div>         
+        <!-- JavaScript plugins -->         
+        <script type="text/javascript" src="../assets/bookingform/js/jquery-2.2.3.min.js"></script>         
+        <!-- Calendar -->         
+        <!-- <script src="../assets/bookingform/js/jquery-ui.js"></script>          -->
+        <br><br><br><br><br><br><br><br><br><br><br><br>       
+    </body>
+    <app-footer></app-footer>     
+</html>

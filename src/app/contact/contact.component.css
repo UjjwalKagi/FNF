@@ -1,0 +1,243 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  height: 100%;
+  color: #fff;
+  /* background-image: url("/assets/images/team_bg.png"); */
+}
+
+footer {
+  background-color: #000;
+  margin-top: 20px;
+  font-size: 16px;
+  text-align:left;
+}
+
+.header {
+  width: 100%;
+  height: 200px;
+  /* background: #3498db; */
+  background: url("/assets/images/bg/1.jpg") no-repeat center;
+  display: table;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+}
+
+h4 {
+  color: black;
+  text-align: left;
+}
+
+.contact-list-item {
+  width: 100%;
+  display: table;
+}
+
+.square {
+  position: relative;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: lightgrey;
+}
+
+.content:hover img {
+  -webkit-transform: scale3d(1.2, 1.2, 1);
+  transform: scale3d(1.2, 1.2, 1);
+}
+
+.content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  -webkit-transition: all 0.5s ease-out 0.15s;
+  transition: all 0.5s ease-out 0.15s;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+.details {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  /*background-color: #eee;*/
+  color: black;
+  width: 100%;
+}
+
+.contact-col {
+  display: table-cell;
+  width: 33%;
+  vertical-align: top;
+}
+
+.site-content {
+  max-width: 1024px;
+  text-align: center;
+  margin: auto;
+}
+
+.details ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.details li {
+  padding: 3px;
+  text-align: left;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contact-name {
+  padding: 1em 0;
+}
+
+.contact-name-more {
+  padding: 0.4em 0;
+  margin-top: 10px;
+}
+
+.contact-name,
+.contact-name-more {
+  background-color: darkgrey;
+  color: white;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
+.contact-role {
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+.label {
+  font-size: 0.7em;
+  color: darkgrey;
+}
+
+.value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.details-table {
+  display:none;
+}
+
+.details-more-table {
+  width:100%;
+}
+
+.label-more {
+  width:50%;
+  color: darkgrey;
+  text-align:right;
+  padding-right:10px;
+  vertical-align: top;
+}
+
+.value-more {
+  color:black;
+  padding-left:10px;
+  text-align:left;
+  word-break: break-all;
+}
+
+.contact-list {
+  max-width: 1024px;
+  width: 100%;
+  margin: auto;
+  display: block;
+  text-align: center;
+  display: table;
+}
+
+.details a , .details-table a{
+  text-decoration: none;
+  color: inherit;
+}
+.details-more {
+  color: black;
+}
+@media (max-width: 600px) {
+  .contact-col {
+    display: block;
+    width: 100%;
+  }
+
+  .square {
+    max-width: 350px;
+    max-height: 350px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  .placeholder-label,
+  .placeholder-value {
+    display: none;
+  }
+
+  .details {
+    display:none;
+  }
+  
+  .details-table {
+    display:block;
+  }
+
+}
+
+/* w3css example of 3 columns
+*/
+
+.col-container {
+  display: table;
+  width: 100%;
+}
+.col {
+  display: table-cell;
+  padding: 16px;
+}

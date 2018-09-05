@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Futsal Nepal Registration</title>
+<!-- Custom Theme files -->
+<link href="../assets/login/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+
+<link href="../assets/login/css/font-awesome.css" rel="stylesheet"> 
+<script type="text/javascript" src="http://www.technicalkeeda.com/js/javascripts/plugin/jquery.js"></script>
+<script type="text/javascript" src="http://www.technicalkeeda.com/js/javascripts/plugin/jquery.validate.js"></script>
+<!-- //font-awesome icons -->
+<!--Google Fonts-->
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<!-- <script>
+		function validatePassword() {
+			var validator = $("#loginForm").validate({
+				rules: {
+					password: "required",
+					confirmpassword: {
+						equalTo: "#password"
+					}
+				},
+				messages: {
+					password: " Enter Password",
+					confirmpassword: " Enter Confirm Password Same as Password"
+				}
+			});
+			if (validator.form()) {
+				alert('Sucess');
+			}
+		}
+	 
+		</script> -->
+</head>
+<body>
+	<app-header></app-header>
+	<div class="wthree-dot">
+		<h1>Register Here</h1>
+			<div class="profile">
+				<div class="wrap">
+					<div class="w3layouts-top-grids">
+						<ul class="rslides callbacks callbacks1" id="slider4">
+							
+							<li>
+								<div class="w3ls-subscribe">
+									<div class="agileits-border">
+										<h4>New Customer?</h4>
+										
+										<form ngNativeValidate role="form" [formGroup]="customercreationForms" (submit)="customercreationForm()" data-toggle="validator">
+											<input type="text" name="Fullname" formControlName="Fullname" placeholder="Full Name" required="" minlength="1"  oninvalid="this.setCustomValidity('Please Enter valid full name')"
+											oninput="setCustomValidity('')">
+											<!-- <input type="text" name="Last name" placeholder="Last Name" required="" minlength="1"  oninvalid="this.setCustomValidity('Please Enter last name')"
+											oninput="setCustomValidity('')"> -->
+											<input type="text" name="Phone Number" formControlName="PhoneNo" placeholder="Phone Number" required="" minlength="7" maxlength="14"  oninvalid="this.setCustomValidity('Please Enter phone number')"
+											oninput="setCustomValidity('')">
+											<input type="email" name="Email" placeholder="Email" formControlName="Email" required="" minlength="5"  oninvalid="this.setCustomValidity('Please Enter valid email')"
+											oninput="setCustomValidity('')">
+											<!-- <input type="password" name="Password" id="password" placeholder="Password" required="required" minlength="3" oninvalid="this.setCustomValidity('Please Enter valid Password')"
+												oninput="setCustomValidity('')">
+										
+											<input type="password" name="confirm_password" id="password1" placeholder="Confirm Password" required="required" minlength="3" oninvalid="this.setCustomValidity('Please Re-Enter matching password')"
+											oninput="setCustomValidity('')"> -->
+
+											<input type="password" name="Password1" formControlName="Password" id="password" placeholder="Password" required="required" minlength="3" onchange="check()"/>
+									
+										<!-- <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password" required="required" minlength="3" onchange="check()"/> -->
+
+											
+											<input type="text" name="Longitude"  formControlName="Longitude" placeholder="Longitude" required="" minlength="2"  oninvalid="this.setCustomValidity('Please Enter valid Longitude')"
+											oninput="setCustomValidity('')">
+											<input type="text" name="Latitude"  formControlName="Latitude" placeholder="Latitude" required="" minlength="2"  oninvalid="this.setCustomValidity('Please Enter valid Latitude')"
+											oninput="setCustomValidity('')">
+
+											<!-- <label><font color="white">Gender : </font></label>
+
+												
+												<label for="gender"><input type="radio" name="gender" oninvalid="this.setCustomValidity('Please select gender')"
+													oninput="setCustomValidity('')">Male </label>
+												
+												
+												<label for="gender"><input type="radio" name="gender">Female</label>
+											
+												
+												<label for="gender"><input type="radio" name="gender">Others</label> -->
+												<br>
+												<br>
+												<br>
+												
+											<input type="submit" id="submit" value="Sign Up">
+											<div class="agile-signin"><br><br>
+											<h4>Have an account <a routerLink="/login">SignIn</a></h4>
+											</div>
+										</form>
+									</div>
+								</div>
+							</li>
+						</ul>
+					
+					
+				
+		
+						<!-- <div class="wthree_footer_copy">
+							<p>© 2018 Futsal Nepal</p>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- js -->
+		
+		<script src="../assets/login/js/jquery-1.11.1.min.js"></script>
+
+	</body>
+	<app-footer></app-footer>
+</html>
